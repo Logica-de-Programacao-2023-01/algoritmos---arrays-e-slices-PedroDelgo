@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+//Crie um Array de floats com 6 elementos.
+//Solicite ao usuário que informe um número que será adicionado em todas as posições do Array.
+//Imprima o Array resultante.
+
+func main() {
+	arr := [6]float64{1, 2, 3, 4, 5, 6}
+	var valor float64
+
+	fmt.Print("Insira um valor em float: ")
+	fmt.Scan(&valor)
+
+	for i := range arr {
+		arr[i] += valor
+	}
+	fmt.Print("A nova array é igual a: ", arr)
+}
